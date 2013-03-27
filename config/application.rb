@@ -17,6 +17,19 @@ end
 
 module Coffeetailor
   class Application < Rails::Application
+    
+    config.to_prepare do
+      # Load application's model / class decorators
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+
+      # Load application's view overrides
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -64,5 +77,12 @@ module Coffeetailor
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Factory_girl_rails v4.2.0 behaviour has changed. This is the fix
+    # https://github.com/thoughtbot/factory_girl_rails/issues/88
+    # config.generators do |g|
+    #   g.test_framework :rspec, fixture: true
+    #   g.fixture_replacement :factory_girl
+    # end
   end
 end

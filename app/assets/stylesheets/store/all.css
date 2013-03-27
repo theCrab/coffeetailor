@@ -1,0 +1,35 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ *= require store/spree_core
+ *= require store/spree_promo
+
+ *= require_self
+ *= require_tree .
+*/
+#logo a:before{
+	content:"Coffee Tailors";
+	padding-top:40px;
+	font-size:40px;
+	line-height:2;}
+#logo a:after{content:""}
+#logo a img{
+	display:none;
+}
+#search-bar {display:none;}
+body {background: black url('frontend-bg.jpg') no-repeat;}
+/*a { color: #CD2996;}*/
+a:hover { color: #CD2996;}
+.taxonomy-root, .filter-title { border-bottom: 1px solid #3D3D3D !important;}
+nav #main-nav-bar, #breadcrumbs {border-bottom: 1px solid #404042;}
+#user-info {border: 2px solid #404042;}
+#breadcrumbs li a, .subtaxon-title a {color: #CD2996;}
+nav #main-nav-bar li#link-to-cart a { color: #CD2996;}
+h1, h2, h3, h4, h5, h6, .product-title { color: #CFCDCD !important; }
+#product-properties .odd { color: #444444 !important; background-color: #bbbbbb; }
+.price { color: #ff11ff !important;}
+footer #footer {border-top: 1px solid #404042 !important;}
+footer #footer-left p {display:none;;}
