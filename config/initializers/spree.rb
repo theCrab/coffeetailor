@@ -11,7 +11,7 @@ Spree.config do |config|
   config.site_name = "Coffee Tailors"
   
   # Amazon S3 Storage
-  config.use_s3 = true
+  config.use_s3 = true if Rails.env.production?
   config.s3_bucket = 'esthelena'
   config.s3_access_key = "AKIAJDCQ7GM3NVVL3ILA"
   config.s3_secret = "6vdkds+NVfV1tWptBXJraNExMl4LB5p3l7lA5/Z"
@@ -22,6 +22,8 @@ end
 
 Spree.user_class = "Spree::User"
 
-Paperclip.interpolates(:s3_eu_url) do |attachment, style|
-  "#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, "")}"
+if Rails.env.production?
+  Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+    "#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, "")}"
+  end
 end

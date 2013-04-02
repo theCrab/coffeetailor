@@ -39,6 +39,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 group :development, :test do
 	gem 'rspec-rails'
+  gem 'sqlite3'
 end
 
 gem 'spree', '~> 1.3.2'
