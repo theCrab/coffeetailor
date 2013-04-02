@@ -12,10 +12,16 @@ Spree.config do |config|
   
   # Amazon S3 Storage
   config.use_s3 = true
-  config.s3_bucket = '<bucket>'
-  config.s3_access_key = "<key>"
-  config.s3_secret = "<secret>"
+  config.s3_bucket = 'esthelena'
+  config.s3_access_key = "AKIAJDCQ7GM3NVVL3ILA"
+  config.s3_secret = "6vdkds+NVfV1tWptBXJraNExMl4LB5p3l7lA5/Z"
+  config.attachment_url = ":s3_eu_url"
+  config.s3_host_alias = "seu-west-1.amazonaws.com"
   
 end
 
 Spree.user_class = "Spree::User"
+
+Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+  "#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/}, "")}"
+end
