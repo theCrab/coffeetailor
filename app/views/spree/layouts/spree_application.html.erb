@@ -14,17 +14,21 @@
     <div class="container">
 
       <div id="wrapper" class="row" data-hook>
-	
-        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve" %>" data-hook>
+
+        <%= breadcrumbs(@taxon) %>
+
+        <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "sixteen" %>" data-hook>
           <%= flash_messages %>
+
+          <%= yield %>
 
         </div>
 
       </div>
     </div>
 	
-          <%= yield %>
-
 	<section id="coffee-footer" class="row">
     	<div class="container"><%= render :partial => 'spree/shared/footer' %></div>
 	</section>

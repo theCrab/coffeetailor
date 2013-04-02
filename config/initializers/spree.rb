@@ -9,6 +9,13 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   config.site_name = "Coffee Tailors"
+  
+  # Amazon S3 Storage
+  config.use_s3 = true
+  config.s3_bucket = '<bucket>'
+  config.s3_access_key = "<key>"
+  config.s3_secret = "<secret>"
+  
 end
 
 Spree.user_class = "Spree::User"

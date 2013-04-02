@@ -1,0 +1,13 @@
+<section id="coffee-tailor" class="row">
+	<div class="container" >
+		<header id="header" class="row" data-hook>
+		  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+		  <%= render :partial => 'spree/shared/nav_bar' %>
+		</header>
+	</div>
+</section>
+<section id="coffee-nav" class="row">
+	<header class="container" data-hook>
+		<%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+	</header>
+</section>

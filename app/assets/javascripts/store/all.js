@@ -11,3 +11,4 @@
 //= require store/spree_promo
 
 //= require_tree .
+//= require spree_variant_options
