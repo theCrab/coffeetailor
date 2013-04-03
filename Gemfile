@@ -3,6 +3,12 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.13'
 
+
+group :development, :test do
+	gem 'rspec-rails'
+  gem 'sqlite3'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :production do
@@ -38,10 +44,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-group :development, :test do
-	gem 'rspec-rails'
-  gem 'sqlite3'
-end
 
 gem 'spree', '~> 1.3.2'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
