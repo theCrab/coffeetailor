@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source 'https://rubygems.com'
+source 'https://github.com'
 
 ruby '1.9.3'
 gem 'rails', '3.2.13'
@@ -42,6 +43,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'ransack', '>= 0.7.2'
 
 gem 'spree', '~> 1.3.2'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
