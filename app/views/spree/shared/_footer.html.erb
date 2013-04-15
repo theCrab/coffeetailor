@@ -1,36 +1,35 @@
 <footer id="footer" class="sixteen columns" data-hook>
   <div id="footer-left" class="columns alpha eight" data-hook>
-	
-	<ul class="column four">
+
+	<section class="column four">
   		<h4>Coffee</h4>
-		<li><%= link_to "Coffee Subscription", '/store' %></li>
-		<li><%= link_to "Featured Coffee Roasters", '/coffee-roasters' %></li>
-		<li><%= t :powered_by  %> <%= link_to 'Coffee', '#' %></li>
-  	</ul>
-	<ul class="column four">
+		<p><%= link_to "Coffee Subscription", '/store' %></p>
+		<p><%= link_to "Featured Coffee Roasters", '/coffee-roasters' %></p>
+  	</section>
+	<section class="column four">
   		<h4>Tailors</h4>
-		<li><%= link_to "About us", '/about-us' %></li>
-		<li><%= link_to "Tips on coffee", '/coffee-tips' %></li>
-		<li><%= link_to "Blog", '/blog' %></li>
-  	</ul>
-	
+		<p><%= link_to "About us", '/about-us' %></p>
+		<p><%= link_to "Tips on coffee", '/coffee-tips' %></p>
+		<p><%= link_to "Blog", '/blog' %></p>
+  	</section>
+
   </div>
   <div id="footer-right" class="columns omega eight" data-hook>
-  	<ul class="column eight">
+  	<section class="column eight">
   		<h4>Support</h4>
-		<li><%= link_to "FAQ", '/faq' %></li>
-		<li><%= link_to "How it works", '/how-it-works' %></li>
-		<li><%= link_to "Contact", '/contact-us' %></li>
-		<li><%= link_to "Terms", '/terms-and-conditions' %></li>
-		<li><%= link_to "Privacy", '/privacy' %></li>
-		<li><%= t :built_by  %> <%= link_to 'Safarista Design', 'http://safarista.com' %></li>
-  	</ul>
-	<ul class="column eight">
+		  <p><%= link_to "FAQ", '/faq' %></p>
+		  <p><%= link_to "How it works", '/how-it-works' %></p>
+		  <p><%= link_to "Contact", '/contact-us' %></p>
+		  <p><%= link_to "Terms", '/terms-and-conditions' %></p>
+		  <p><%= link_to "Privacy", '/privacy' %></p>
+  	</section>
+	<section class="column eight">
   		<h4>Spread the word</h4>
-		<li><%= link_to "Like us on Facebook", 'http://www.facebook.com/coffee.tailors' %></li>
-		<li><%= link_to "Follow us on Twitter", 'http://www.twitter.com/coffeetailors' %></li>
-		<li><%= link_to "Follow us on Instagram", 'http://www.instagram.com/coffeetailors' %></li>
-  	</ul>
+		<p><%= link_to "Like us on Facebook", 'http://www.facebook.com/coffee.tailors' %></p>
+		<p><%= link_to "Follow us on Twitter", 'http://www.twitter.com/coffeetailors' %></p>
+		<p><%= link_to "Follow us on Instagram", 'http://www.instagram.com/coffeetailors' %></p>
+    <p><%= t :built_by  %> <%= link_to 'Safarista Design', 'http://safarista.com' %></p>
+    <p class="clearfix"><%= t :copyright  %> <%= link_to raw('&copy 2013 Coffee Tailors'), '/' %></p>
+  	</section>
   </div>
-	<p class="clearfix"><%= t :copyright  %> <%= link_to raw('&copy 2013 Coffee Tailors'), '/' %></p>
 </footer>

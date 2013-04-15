@@ -1,9 +1,13 @@
 <div class="row" id="coffee-slider">
 	<section class="container">
-		<%= image_tag "coffee-tailors-front-slider.jpg", :title => "sliding coffee", :width => "100%" %>
+		<span>.</span>
+		<%= link_to image_tag( "coffee-tailors-slider.png", alt: "sliding coffee", width: "100%"), '#', title: 'Where will your coffee take you' %>
+		<span>.</span>
 	</section>
 	<style>
 		#wrapper{margin-bottom:0;}
+		#coffee-slider .container{margin-bottom:0;}
+		#coffee-nav{margin-bottom: 0;}
 	</style>
 </div>
 
@@ -13,17 +17,17 @@
 			<h2 class="step-title" title="Step One">1</h2>
 			<p class="step-explanation">Choose a subscription plan</p>
 		</article>
-		
+
 		<article class="columns four">
 			<h2 class="step-title" title="Step Two">2</h2>
 			<p class="step-explanation">Select your grind</p>
 		</article>
-		
+
 		<article class="columns four">
 			<h2 class="step-title" title="Step Three">3</h2>
-			<p class="step-explanation">Wait for delivery</p>
+			<p class="step-explanation">Wait for your delivery</p>
 		</article>
-		
+
 		<article class="columns four">
 			<p class="step-subscribe" title="Subscribe now"><a href="/store"><span>SUBSCRIBE NOW!</span></a></p>
 		</article>
@@ -33,17 +37,18 @@
 <!-- Blog and Instagram feed -->
 <div class="container">
 	<article class="columns eight" id="blog-feed">
-		<div class="feed">	
+		<div class="feed">
 			<h1 title="Blog feed">BLOG</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..</p>
-			<p style="text-align:center;"> CUPS HERE </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ..Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+			<p style="text-align:center;"> <% 3.times { %><%= image_tag 'coffee-tailors-cup.png'%> <% } %> </p>
+			<p style="text-align:center;"><%= link_to image_tag('coffee-tailors-readmore.png'), '#' %> </p>
 		</div>
 	</article>
-	
+
 	<article class="columns eight" id="instagram-feed">
 		<div class="feed">
 			<h1 title="Instagram feed">LATEST INSTAGRAM</h1>
-			<p>Instagram feed</p>
+			<p style="text-align:center;"><%= link_to image_tag('coffee-tailors-instagram.jpg', alt: 'coffee tailors instagram profile'), 'http://instagram.com/coffee_tailor', title: 'coffee tailors instagram profile' %></p>
 		</div>
 	</article>
 </div>
@@ -51,57 +56,55 @@
 
 <section class="container">
 	<fieldset class="what-they-say-about-us" class="">
-		<span><legend>WHAT THEY SAY ABOUT US!</legend></span>
-			
+		<legend align="center"><span title="Featured coffee roasters">WHAT THEY SAY ABOUT US!</span></legend>
+
 		<article class="columns four">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
+			<p><strong><em>&mdash; Miss Shook Liu</em></strong></p>
 		</article>
-		
+
 		<article class="columns four">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
+			<p><strong><em>&mdash; Miss Shook Liu</em></strong></p>
 		</article>
-		
+
 		<article class="columns four">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
+			<p><strong><em>&mdash; Miss Shook Liu</em></strong></p>
 		</article>
-		
+
 		<article class="columns four">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
+			<p><strong><em>&mdash; Miss Shook Liu</em></strong></p>
 		</article>
-		
+
 	</fieldset>
 </section>
 <div class="row">
 <section class="container">
-	<fieldset class="featured-roasters" class="">
-		<span><legend>FEATURED COFFEE ROASTERS</legend></span>
-			
+	<fieldset class="featured-roasters">
+		<legend align="center"><span title="Featured coffee roasters">FEATURED COFFEE ROASTERS</span></legend>
+
 		<article class="columns five">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
 		</article>
-		
+
 		<article class="columns five">
 			<p>The quality of your materials is excellent, from a customer service point of view this has been fantastic throughout! The help and advice you gave me great and i will have no hesitation.
 			</p>
-			<p><em>&mdash; Miss Shook Liu</em></p>
 		</article>
-		
+
 		<article class="columns six">
 			<img src="" alt="hands on coffee" title="hands-on coffee roaster" style="width:60px;height:60px;float:left;">
 			<p>The quality of your materials is excellent, from a customer.</p>
-			<p><em>&mdash; <a href="/coffee-roasters">See previous roasters</a></em></p>
+			<p><em><a href="/coffee-roasters">See previous roasters</a></em></p>
 		</article>
-		
+
 	</fieldset>
 </section>
 </div>

@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 
 group :development, :test do
 	gem 'rspec-rails'
-  # gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 # Bundle edge Rails instead:

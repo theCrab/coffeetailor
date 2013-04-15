@@ -16,20 +16,25 @@
 */
 
 
-body {background: black url('frontend-bg.jpg') repeat;font-family:'Proxima Nova';}
-#coffee-tailor{background-color:#f4efdd; margin:0;}
-#coffee-nav{background:transparent url('nav-bg.png') repeat-x;min-height:70px;}
-a { color: #f4efdd;}
+body { background: black url('frontend-bg.jpg') repeat;font-family:'Proxima Nova', 'Ubuntu', sans-serif;}
+#logo{ margin-top: 15px; }
+#coffee-tailor{ background-color:#f4efdd; margin:0; }
+#coffee-nav{ position:relative;z-index: 1; background:transparent url('nav-bg-top.png') repeat-x;min-height:70px; }
+
+#coffee-slider{ margin-bottom: 0;position: relative;z-index: 0;margin-top: -23px; background: url('coffee-tailors-riba.png') repeat-x bottom, url('slider-bg.jpg');}
+/*#coffee-slider{background:url('slider-bg.jpg');}*/
+a { color: #f4efdd; }
 /*a:hover { color: #CD2996;}*= require spree_variant_options
 */
-.taxonomy-root, .filter-title { border-bottom: 1px solid #3D3D3D !important;}
-nav #main-nav-bar li a {font-size: 15px;padding: 5px 21px;}
-nav #main-nav-bar {border-bottom:none !important;font-weight:400;}
-nav #breadcrumbs {border-bottom: 1px solid #404042;}
-#main-nav-bar li:last-child a{border-radius:12px; background:#922635;padding-left:20px;padding-right:20px;}
-#nav-bar {margin-top:-20px;}
-#nav-bar li:first-child, #nav-bar li:nth-child(2) {background: #3a1c00;padding: 5px;margin-bottom: 15px;}
-#nav-bar li:first-child {border-bottom-left-radius: 4px;margin-right:-3px;}
+#header{ margin-bottom: 0; }
+.taxonomy-root, .filter-title { border-bottom: 1px solid #3D3D3D !important; }
+nav #main-nav-bar li a {font-size: 15px;padding: 5px 21px; }
+nav #main-nav-bar { border-bottom:none !important;font-weight:400; }
+nav #breadcrumbs { border-bottom: 1px solid #404042; }
+#main-nav-bar li:last-child a{ border-radius:12px; background:#922635;padding-left:20px;padding-right:20px;}
+#nav-bar { margin-top:-20px; }
+#nav-bar li:first-child, #nav-bar li:nth-child(2) { background: #3a1c00;padding: 5px;margin-bottom: 15px;}
+#nav-bar li:first-child { border-bottom-left-radius: 4px;margin-right:-3px; }
 #nav-bar li:nth-child(2) {border-bottom-right-radius: 4px;}
 #coffee-subscription-steps {padding:30px 0;background:transparent url('subscription-steps.png') repeat;color:#f1efe9;}
 .step-title{height: 50px;line-height: 50px;text-align: center;border-radius: 50%;background: none repeat scroll 0% 0% #922635;color:#f1efe9;margin-right: 10px;width: 50px;clear: both;float: left;}
@@ -37,16 +42,18 @@ nav #breadcrumbs {border-bottom: 1px solid #404042;}
 .step-subscribe, .step-explanation {font-size: 2em;font-weight: 600;}
 .step-subscribe{border-radius: 4px;background-color: rgb(146, 38, 53);text-align: center;margin: 0px;color: rgb(241, 249, 233);}
 .step-subscribe span{border:1px dashed green;padding:5px 10px;border-radius: 4px;}
-#blog-feed, #instagram-feed {background-color:#f5f2ea;margin-bottom:38px;} 
-#blog-feed >div, #instagram-feed > div {padding:20px; margin:0;}
-#blog-feed h1, #instagram-feed h1 {text-align: center;border-bottom: 1px solid #f5f2ea;padding-bottom: 20px;}
-.what-they-say-about-us, .featured-roasters {border:none;padding: 0px;border-top:1px solid #f5f2ea;margin-bottom:60px;}
-.what-they-say-about-us span legend, .featured-roasters span legend{ margin-bottom:20px;text-align:center;margin-top:-10px;font-weight:700;font-size:3em; }
+#blog-feed, #instagram-feed {background-color:#f5f2ea;margin-bottom:38px;}
+#blog-feed >div, #instagram-feed > div {padding:40px; margin:0;min-height: 364px;}
+#blog-feed h1, #instagram-feed h1 {text-align: center;border-bottom: 1px solid rgb(212, 201, 175);padding: 5px 0 20px 0;font-size: 2.5em;}
+.what-they-say-about-us, .featured-roasters {border:none;padding: 0px;border-top:1px solid rgb(212, 201, 175);margin-bottom:60px;}
+.what-they-say-about-us legend, .featured-roasters legend{ padding:0 10px; margin-bottom:20px;text-align:center;margin-top:-10px;font-weight:700;font-size:2.5em; }
 .what-they-say-about-us article{background-color: rgb(245, 242, 234);}
 .what-they-say-about-us article p, .featured-roasters article p {margin-right:15px;margin-left:15px;}
+#flowplayer{margin-bottom: 40px !important;}
+#why-chose-us h4{margin:20px 10px 10px 10px;padding:0 0 10px;line-height: 1; text-align: center;border-bottom: 1px solid rgb(212, 201, 175);}
 #products li {background: url('box-bg.png') repeat;padding: 20px;border: 3px solid #e3d8c1;}
 ul #products {background:url("choose-coffee.png") no-repeat scroll center top transparent; padding-top:70px;}
-/*p{font-size:20px;}*/
+p{font-size:14px;}
 
 /*#user-info {border: 2px solid #404042;}*= require spree_variant_options
 */
@@ -59,8 +66,11 @@ li#link-to-cart a { color: #967d5a;background: #e2d5bf url('coffee-tailors-cart.
 */
 /*.price { color: #ff11ff !important;}*= require spree_variant_options
 */
-#coffee-footer {background:transparent url('coffee-tailors-footer-bg.png') repeat-x;margin-top:40px;}
+#coffee-footer {color:white;background:transparent url('coffee-tailors-footer-bg.png') repeat-x;margin-top:40px;margin-bottom: 0;}
 #coffee-footer #footer {border-top:none !important;}
+#coffee-footer #footer p{margin: 0 !important;padding:5px 0;}
+#coffee-footer #footer h4{color: whitesmoke;border-bottom: 1px solid whitesmoke;margin-bottom: 10px;}
+
 
 .variant-option-values li{display:inline-block !important;float:none !important;}
 #product-variants ul li {padding:0;}
@@ -68,4 +78,13 @@ li#link-to-cart a { color: #967d5a;background: #e2d5bf url('coffee-tailors-cart.
 /*.variant-option-values li{padding:10px;background-color:#e3d8c1;font-size:36px;color:#74482c;border-radius:4px;margin:5px;}*/
 /*.coffee-weights .w250g{background-color:#c3d583;}*/
 .option-value.selected, .option-value.in-stock:hover {border-color: #78893d !important;background-color: #c3d583 !important;color:#74482c !important;}
-#product-price span.price{color: rgb(116, 72, 44); font-size: 5em; margin: 41px; display: block; font-weight: 200;}
+#product-price span.price{color: rgb(116, 72, 44); font-size: 2em; margin: 41px; display: block; /*font-weight: 200;*/}
+#main-image{width: 50%;margin: 0 auto;}
+
+/*flowplayer*/
+#flowplayer { width: 80%; background-color: transparent; background-size: cover; max-width: 800px; }
+#flowplayer .fp-controls { background-color: rgba(17, 17, 17, 1)}
+#flowplayer .fp-timeline { background-color: rgba(204, 204, 204, 1)}
+#flowplayer .fp-progress { background-color: rgba(0, 167, 200, 1)}
+#flowplayer .fp-buffer { background-color: rgba(249, 249, 249, 1)}
+.flowplayer { background-image: url('coffee-tailorsvideo-poster.jpeg')}

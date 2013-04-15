@@ -6,30 +6,22 @@
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
   <head data-hook="inside_head">
     <%= render :partial => 'spree/shared/head' %>
+    <link rel="stylesheet" type="text/css"
+      href="http://releases.flowplayer.org/5.4.0/skin/minimalist.css" />
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-	
+
     <%= render :partial => 'spree/shared/header' %>
-	
-    <div class="container">
 
-      <div id="wrapper" class="row" data-hook>
-	
-        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve" %>" data-hook>
-          <%= flash_messages %>
+    <%= yield %>
 
-        </div>
+	 <section id="coffee-footer" class="row">
+      	<div class="container"><%= render :partial => 'spree/shared/footer' %></div>
+    </section>
 
-      </div>
-    </div>
-	
-          <%= yield %>
-
-	<section id="coffee-footer" class="row">
-    	<div class="container"><%= render :partial => 'spree/shared/footer' %></div>
-	</section>
-	
     <%= render :partial => 'spree/shared/google_analytics' %>
-
+    <!-- flowplayer depends on jQuery 1.7.1+ -->
+    <!-- flowplayer javascript component -->
+    <script src="http://releases.flowplayer.org/5.4.0/flowplayer.min.js"></script>
   </body>
 </html>

@@ -5,10 +5,16 @@ Coffeetailor::Application.routes.draw do
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
-  
-  root :to => 'welcome#index'
-  
+
+  resource :welcome
+  get 'about_us', to: 'welcome#about_us', as: 'about_us'
+  get 'coffee_education', to: 'welcome#coffee_education', as: 'coffee_education'
+
   mount Spree::Core::Engine, :at => '/store'
+
+  root :to => 'welcome#index'
+
+
           # The priority is based upon order of creation:
   # first created -> highest priority.
 

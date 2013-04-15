@@ -17,7 +17,7 @@ end
 
 module Coffeetailor
   class Application < Rails::Application
-    
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -73,13 +73,13 @@ module Coffeetailor
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
-    
+
+
     # Factory_girl_rails v4.2.0 behaviour has changed. This is the fix
     # https://github.com/thoughtbot/factory_girl_rails/issues/88
     # config.generators do |g|
