@@ -26,14 +26,4 @@ set :port, "3322"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-def press_enter(ch, stream, data)
-  if data =~ /Press.\[ENTER\].to.continue/
-    # prompt, and then send the response to the remote process
-    ch.send_data("\n")
-  else
-    # use the default handler for all other text
-    Capistrano::Configuration.default_io_proc.call(ch, stream, data)
-  end
-end
-
 after "deploy", "deploy:cleanup" # keep only the last 5 releases

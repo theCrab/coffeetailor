@@ -17,9 +17,14 @@ BASHRC
     run "mv ~/.bashrc.tmp ~/.bashrc"
     run %q{export RBENV_ROOT="${HOME}/.rbenv"}
     run %q{eval "$(rbenv init -)"}
-    run "rbenv rehash"
-    run "rbenv #{rbenv_bootstrap}", pty: true do |ch, stream, data|
-      press_enter(ch, stream, data)
+    run "rbenv #{rbenv_bootstrap}", :pty => true do |ch, stream, data|
+      if data =~ /Press.\[ENTER\].to.continue/
+        #prompt, and then send the response to the remote process
+        ch.send_data(Capistrano::CLI.password_prompt("Press enter to continue:") + "\n")
+      else
+        #use the default handler for all other text
+        Capistrano::Configuration.default_io_proc.call(ch,stream,data)
+      end
     end
     run "rbenv install #{ruby_version}"
     run "rbenv global #{ruby_version}"
