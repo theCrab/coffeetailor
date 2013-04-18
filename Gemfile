@@ -9,6 +9,14 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+# For a better development experience
+# NOTE: always ensure better_errors is above meta_request
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
   gem 'pg'
@@ -38,7 +46,8 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+# gem 'cap_bootstrap'
 
 # To use debugger
 # gem 'debugger'
