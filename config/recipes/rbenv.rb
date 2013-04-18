@@ -17,6 +17,7 @@ BASHRC
     run "mv ~/.bashrc.tmp ~/.bashrc"
     run %q{export RBENV_ROOT="${HOME}/.rbenv"}
     run %q{eval "$(rbenv init -)"}
+    run "rbenv rehash"
     run "#{sudo} rbenv #{rbenv_bootstrap}"
     run "rbenv install #{ruby_version}"
     run "rbenv global #{ruby_version}"
