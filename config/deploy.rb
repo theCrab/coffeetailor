@@ -19,8 +19,9 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :scm, "git"
-set :repository, "git@github.com:github-theCrab/#{application}.git"
+set :repository, "git@github.com:theCrab/#{application}.git"
 set :branch, "master"
+set :port, "3322"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true

@@ -95,7 +95,6 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.0.4)
     cancan (1.6.8)
-    cap_bootstrap (0.3.0)
     capistrano (2.14.2)
       highline
       net-scp (>= 1.0.0)
@@ -318,7 +317,6 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  cap_bootstrap
   capistrano
   coffee-rails (~> 3.2.1)
   jquery-rails
