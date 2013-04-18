@@ -17,7 +17,7 @@ BASHRC
     run "mv ~/.bashrc.tmp ~/.bashrc"
     run %q{export RBENV_ROOT="${HOME}/.rbenv"}
     run %q{eval "$(rbenv init -)"}
-    run "rbenv #{rbenv_bootstrap}"
+    run "#{sudo} rbenv -y #{rbenv_bootstrap}"
     run "rbenv install #{ruby_version}"
     run "rbenv global #{ruby_version}"
     run "gem install bundler --no-ri --no-rdoc"
