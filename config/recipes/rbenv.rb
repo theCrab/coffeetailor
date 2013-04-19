@@ -6,10 +6,10 @@ namespace :rbenv do
   task :install, roles: :app do
     run "#{sudo} apt-get -y install curl git-core"
     run "#{sudo} apt-get -y install build-essential ruby-dev openssl libopenssl-ruby1.9.1 libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison"
-    run "#{sudo} rm -rf ~/.rbenv/plugins/ruby-build"
+    # run "#{sudo} rm -rf ~/.rbenv/plugins/ruby-build"
     # run "#{sudo} mkdir -p ~/.rbenv/plugins"
     run "curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash"
-    run "git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build"
+    # run "git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build"
 #     bashrc = <<-BASHRC
 # if [ -d ${RBENV_ROOT}/.rbenv ]; then
 #   export PATH="${RBENV_ROOT}/.rbenv/bin:${PATH}"
