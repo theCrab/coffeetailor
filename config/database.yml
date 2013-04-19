@@ -39,10 +39,10 @@ test:
 #   pool: 5
 #   timeout: 5000
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: coffeetailor_production
-#   pool: 5
-#   username: the-crab
-#   password: threeHundred
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: coffeetailor_production
+  pool: 5
+  username: deployer
+  password: threeHooKFITndred
