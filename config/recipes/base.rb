@@ -10,7 +10,6 @@ end
 namespace :deploy do
   desc "Install everything onto the server"
   task :install do
-    # run "export RAILS_ENV=#{deploy_env}"
     run "#{sudo} bash -c 'echo UTC > /etc/timezone'"
     run "#{sudo} cp /usr/share/zoneinfo/UTC /etc/localtime"
     run "#{sudo} dpkg-reconfigure -f noninteractive tzdata"
