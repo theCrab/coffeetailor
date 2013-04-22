@@ -66,7 +66,7 @@ li#link-to-cart a { color: #967d5a;background: #e2d5bf url('coffee-tailors-cart.
 */
 /*.price { color: #ff11ff !important;}*= require spree_variant_options
 */
-#coffee-footer {color:white;background:transparent url('coffee-tailors-footer-bg.png') repeat-x;margin-top:40px;margin-bottom: 0;}
+#coffee-footer {color:white;background:#3a1c00 /*url('coffee-tailors-footer-bg.png') repeat-x*/;margin-top:40px;margin-bottom: 0;}
 #coffee-footer #footer {border-top:none !important;}
 #coffee-footer #footer p{margin: 0 !important;padding:5px 0;}
 #coffee-footer #footer h4{color: whitesmoke;border-bottom: 1px solid whitesmoke;margin-bottom: 10px;}
@@ -88,3 +88,4 @@ li#link-to-cart a { color: #967d5a;background: #e2d5bf url('coffee-tailors-cart.
 #flowplayer .fp-progress { background-color: rgba(0, 167, 200, 1)}
 #flowplayer .fp-buffer { background-color: rgba(249, 249, 249, 1)}
 .flowplayer { background-image: url('coffee-tailorsvideo-poster.jpeg')}
+span.social-media {display: inline-block;vertical-align: text-top;width: 30px;float: right;}

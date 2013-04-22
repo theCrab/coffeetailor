@@ -7,6 +7,7 @@ load 'config/recipes/unicorn'
 load 'config/recipes/postgresql'
 load 'config/recipes/security'
 load 'config/recipes/rbenv'
+load 'config/recipes/imagemagik'
 load 'config/recipes/utilities'
 load 'config/recipes/check'
 
