@@ -43,10 +43,10 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 # gem 'aws-sdk'
 # Use unicorn as the app server
-# gem 'unicorn', group: :production
+gem 'thin'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 # gem 'cap_bootstrap'
 
 # To use debugger
