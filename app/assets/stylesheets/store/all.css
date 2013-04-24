@@ -21,7 +21,7 @@ body { background: black url('frontend-bg.jpg') repeat;font-family:'Proxima Nova
 #coffee-tailor{ background-color:#f4efdd; margin:0; }
 #coffee-nav{ position:relative;z-index: 1; background:transparent url('nav-bg-top.png') repeat-x;min-height:70px; }
 
-#coffee-slider{ margin-bottom: 0;position: relative;z-index: 0;margin-top: -23px; background: url('coffee-tailors-riba.png') repeat-x bottom, url('slider-bg.jpg');}
+#coffee-slider{ margin-bottom: 0;position: relative;z-index: 0;margin-top: -23px; background: transparent url('slider-bg.jpg');}
 /*#coffee-slider{background:url('slider-bg.jpg');}*/
 a { color: #f4efdd; }
 /*a:hover { color: #CD2996;}*= require spree_variant_options

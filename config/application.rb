@@ -73,11 +73,11 @@ module Coffeetailor
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    # config.assets.initialize_on_precompile = false
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.assets.initialize_on_precompile = false
 
 
     # Factory_girl_rails v4.2.0 behaviour has changed. This is the fix
