@@ -5,7 +5,9 @@
 #   desc "Install rbenv, Ruby, and the Bundler gem"
 #   task :install, roles: :app do
 #     # run "#{sudo} apt-get -y install curl git-core"
-#     # run "#{sudo} apt-get -y install build-essential ruby-dev openssl libopenssl-ruby1.9.1 libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison"
+#     # run "#{sudo} apt-get -y install build-essential openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-devlibxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config"
+#     # run "#{sudo} apt-get -y update"
+#     # run "#{sudo} apt-get -y install imagemagick"
 #     # run "curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash"
 # #     bashrc = <<-BASHRC
 # # if [ -d ${RBENV_ROOT}/.rbenv ]; then
