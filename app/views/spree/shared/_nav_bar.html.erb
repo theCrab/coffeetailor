@@ -1,6 +1,6 @@
 <nav id="top-nav-bar" class="columns ten">
   <ul id="nav-bar" class="inline" data-hook>
-	<% if !user_signed_in? %>
+	<% unless signed_in? %>
 	<li><%= link_to "Sign up", signup_path %></li>
 	<% end %>
     <li id="search-bar" data-hook>
