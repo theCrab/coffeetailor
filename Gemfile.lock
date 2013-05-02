@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/theCrab/spree_variant_options.git
-  revision: 6c98875c8dc87864bb668f6d3cc4f9e288c6fdc9
+  revision: 59bf6c69ffb409269b71c08983c36101acea8ba6
   branch: master
   specs:
     spree_variant_options (0.5.0)
