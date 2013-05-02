@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130401091215) do
+ActiveRecord::Schema.define(:version => 20130502095116) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -137,6 +137,16 @@ ActiveRecord::Schema.define(:version => 20130401091215) do
     t.boolean  "test_mode",   :default => true
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+  end
+
+  create_table "spree_gocardless_payments", :force => true do |t|
+    t.string   "number"
+    t.string   "resource_id"
+    t.string   "resource_type"
+    t.string   "status"
+    t.date     "paid"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "spree_inventory_units", :force => true do |t|

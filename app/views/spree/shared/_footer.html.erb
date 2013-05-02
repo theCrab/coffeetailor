@@ -13,8 +13,12 @@
   		<h4>Tailors</h4>
 		<p><%= link_to "About us", '/about_us', title: "About us" %></p>
     <p><%= link_to "Partner with us", '/store/partner-with_us', title: "Partner with us" %></p>
-    <p><%= link_to "Sign up", '/store/signup', title: "Sign up" %></p>
-		<p><%= link_to "Login", '/store/login', title: "Login" %></p>
+    <% if signed_in? %>
+      <p><%= link_to "My Account", '/account', title: "My Account" %></p>
+    <% else %>
+      <p><%= link_to "Sign up", '/store/signup', title: "Sign up" %></p>
+      <p><%= link_to "Login", '/store/login', title: "Login" %></p>
+    <% end -%>
 	</section>
 
   </div>

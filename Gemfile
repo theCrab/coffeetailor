@@ -51,6 +51,7 @@ gem 'thin'
 # To use debugger
 # gem 'debugger'
 gem 'ransack', '0.7.2'
+# gem 'gocardless'
 
 gem 'spree', '~> 1.3.2'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
@@ -60,4 +61,4 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-s
 gem 'spree_subscriptions', :git => "https://github.com/nebulab/spree-subscriptions.git"
 gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content', :branch => "1-3-stable"
 gem 'spree_variant_options', :git => "https://github.com/theCrab/spree_variant_options.git", :branch => 'master'
-# gem 'spree_gocardless', :path => '../', group: [:development, :test]
+gem 'spree_gocardless', :git => 'git://github.com/theCrab/spree_gocardless'
