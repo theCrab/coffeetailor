@@ -56,8 +56,6 @@ gem 'ransack', '0.7.2'
 gem 'spree', '~> 1.3.2'
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
 
-# gem 'spree_paymill' , :git => 'git://github.com/webionate/spree_paymill.git'
-# gem 'activemerchant', :git => 'git://github.com/webionate/active_merchant.git'
 gem 'spree_subscriptions', :git => "https://github.com/nebulab/spree-subscriptions.git"
 gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content', :branch => "1-3-stable"
 gem 'spree_variant_options', :git => "https://github.com/theCrab/spree_variant_options.git", :branch => 'master'
