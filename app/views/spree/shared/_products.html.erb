@@ -13,11 +13,11 @@
   <% products.each do |product| %>
     <div id="product_<%= product.id %>" class="columns  six <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
 
-      <h2 class="product-title"><%= link_to truncate(product.name, :length => 50), product, :class => '', :itemprop => "name", :title => product.name %></h2>
+      <!-- <h2 class="product-title"><%= link_to truncate(product.name, :length => 50), product, :class => '', :itemprop => "name", :title => product.name %></h2> -->
 	<div class="product-image">
         <%= link_to large_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
       </div>
-      <span class="price selling" itemprop="price"><%= product.price_in(current_currency).display_price %></span>
+      <!-- <span class="price selling" itemprop="price"><%= product.price_in(current_currency).display_price %></span> -->
     </div>
   <% end %>
   <% reset_cycle("classes") %>
