@@ -16,3 +16,4 @@
 public/spree/products/
 config/database.yml
 .ruby-version
+*.dump
