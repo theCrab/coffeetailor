@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/theCrab/spree_variant_options.git
-  revision: 36d675ee93844d21f359df56772b67c158361b0f
+  revision: 25c38e0c8ef6d238f38f278b71dd500842abee00
   branch: master
   specs:
     spree_variant_options (0.5.0)
@@ -311,7 +311,7 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     thor (0.18.1)
-    tilt (1.4.0)
+    tilt (1.4.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
