@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: https://github.com/theCrab/spree_variant_options.git
-  revision: 59bf6c69ffb409269b71c08983c36101acea8ba6
+  revision: 36d675ee93844d21f359df56772b67c158361b0f
   branch: master
   specs:
     spree_variant_options (0.5.0)
@@ -169,7 +169,7 @@ GEM
     money (5.0.0)
       i18n (~> 0.4)
       json
-    multi_json (1.7.2)
+    multi_json (1.7.3)
     multi_xml (0.5.3)
     multipart-post (1.2.0)
     nokogiri (1.5.9)
