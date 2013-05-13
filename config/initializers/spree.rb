@@ -12,9 +12,6 @@ Spree.config do |config|
 
   # Amazon S3 Storage
   config.use_s3 = true
-  config.s3_bucket = 'esthelena'
-  config.s3_access_key = 'AKIAJDCQ7GM3NVVL3ILA'
-  config.s3_secret = '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'
   config.attachment_url = ':s3_eu_url'
   config.s3_host_alias = 's3-eu-west-1.amazonaws.com'
 
