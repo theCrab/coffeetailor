@@ -1,6 +1,6 @@
 gc_payment_method = Spree::PaymentMethod.find_by_type("Spree::PaymentMethod::Gocardless")
 
-if !Rails.env.production? && gc_payment_method.preferred_test_mode && gc_payment_method.preferred_server == 'test'
+if !gc_payment_method.nil? && !Rails.env.production? && gc_payment_method.preferred_test_mode && gc_payment_method.preferred_server == 'test'
   puts "***********===> Gocardless <=== is in sandbox mode***********"
   GoCardless.environment = :sandbox
 end
